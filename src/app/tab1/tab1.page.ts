@@ -10,6 +10,11 @@ import { MoviesService } from '../services/movies.service';
 export class Tab1Page implements OnInit{
 
   peliculasRecientes: Pelicula[]=[];
+  
+  slideOpts = {
+    slidesPerView: 1.1,
+    freeMode: true
+  }
 
   constructor(private moviesService: MoviesService) {}
 
